@@ -1,0 +1,18 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - cf_load_parquet_to_bq
+  - --region=southamerica-east1
+  - --source=link_do_repo
+  - --trigger-bucket=link_do_bucket
+  - --runtime=python39
+  - --memory=1024MB
+  - --project=projeto_gcp
+  - --entry-point=main
+  - --set-env-vars=BQ_DESTINATION_PROJECT=projeto_gcp
+  - --update-labels=labels=labels
+  - --service-account=cservice_account
+  

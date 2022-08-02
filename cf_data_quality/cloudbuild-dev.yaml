@@ -1,0 +1,17 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - cf_data_quality
+  - --region=southamerica-east1
+  - --source=link_repo
+  - --trigger-http
+  - --allow-unauthenticated
+  - --runtime=python39
+  - --memory=256MB
+  - --project=projeto_gcp
+  - --entry-point=main
+  - --update-labels=labels=labels
+  - --service-account=service_account

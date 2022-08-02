@@ -1,0 +1,17 @@
+steps:
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  args:
+  - gcloud
+  - functions
+  - deploy
+  - cf_convert_json_to_parquet
+  - --region=southamerica-east1
+  - --source=link_repo
+  - --trigger-bucket=bucket
+  - --runtime=python39
+  - --memory=2048MB
+  - --project=projeto_gcp
+  - --entry-point=main
+  - --set-env-vars=variaveis=var
+  - --update-labels=labels=labels
+  - --service-account=service_accounts

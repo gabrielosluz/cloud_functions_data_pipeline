@@ -1,0 +1,23 @@
+- project: projeto_gcp
+  datasetName: dataset_origem
+  datasetDataQualityName: dataset_destino
+  dataTable: tabela_analisada
+  reportTable: tabela_destino
+  includeColumns:
+    - colunas
+
+- project: projeto_gcp
+  datasetName: dataset_origem
+  datasetDataQualityName: dataset_destino
+  dataTable: tabela_analisada
+  reportTable: tabela_destino
+  includeColumns:
+    - colunas
+
+- project: projeto_gcp
+  datasetName: dataset_origem
+  datasetDataQualityName: dataset_destino
+  dataTable: tabela_analisada
+  reportTable: tabela_destino
+  includeColumns:
+    - colunas
